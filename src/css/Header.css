@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--black-color);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 0 20px;
   padding-bottom: 5px;
   color: var(--white-color);
@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  backdrop-filter: blur(10px);
 }
 
 .header__logo {
@@ -16,8 +17,7 @@
   padding-left: 20px;
 }
 
-.header > ul {
-  list-style: none;
+.header__nav {
   flex: 1;
   display: flex;
   list-style: none;
@@ -25,18 +25,43 @@
   padding-top: 9px;
 }
 
-.header > ul > li {
-  opacity: 0.6;
+.header__nav > a {
   cursor: pointer;
-  padding: 0 20px;
+  margin: 0 20px;
   font-size: 15px;
+  color: var(--white-color);
+  text-decoration: none;
+  position: relative;
+  opacity: 0.6;
 }
 
-.header > ul > li:hover {
+.header__nav > a::after {
+  content: '';
+  height: 2px;
+  background-color: var(--white-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -14px;
+  transform: scaleX(0);
+}
+
+.header__nav > a:hover::after {
+  transform: scaleX(1.5);
+}
+
+.header__nav > a:hover {
   opacity: 1;
 }
 
 .header > .MuiSvgIcon-root {
-  padding: 0 20px !important;
+  margin: 0 20px !important;
   margin-top: 10px !important;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  .header__nav > a {
+    display: none;
+  }
 }

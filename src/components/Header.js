@@ -4,23 +4,23 @@ import '../css/Header.css';
 
 const Header = () => {
   return (
-    <nav className='header'>
+    <div className='header'>
       <img
         className='header__logo'
         src='https://resources.sonyliv.com/image/fetch/w_40,c_fill,fl_lossy,f_auto,q_auto:eco,e_contrast:30,e_brightness:10/https://origin-staticv2.sonyliv.com/UI_icons/sonyliv_new_revised_header_logo.png'
         alt='app logo'
       />
-      <ul>
-        <li>TV Shows</li>
-        <li>Originals</li>
-        <li>Sports</li>
-        <li>Movies</li>
-        <li>Premium</li>
-        <li>Games</li>
-      </ul>
+      <nav className='header__nav'>
+        <a>TV Shows</a>
+        <a>Originals</a>
+        <a>Sports</a>
+        <a>Movies</a>
+        <a>Premium</a>
+        <a>Games</a>
+      </nav>
       <Search fontSize='large' />
       <Person fontSize='large' />
-    </nav>
+    </div>
   );
 };
 

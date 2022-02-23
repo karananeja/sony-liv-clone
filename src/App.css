@@ -1,4 +1,9 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
+  --gray-color: #808080;
+}
+
+.app {
+  background-color: var(--black-color);
 }
