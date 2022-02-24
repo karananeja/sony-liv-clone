@@ -1,0 +1,48 @@
+.movies {
+  color: var(--white-color);
+  padding: 50px;
+}
+
+.movies__cards {
+  margin-top: 30px;
+  display: flex;
+}
+
+.movies__card {
+  margin: 0 10px;
+  transition: all 250ms linear;
+}
+
+.movies__card:hover {
+  transform: scale(1.2);
+}
+
+.movies__img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .movies {
+    padding-top: 100px;
+  }
+
+  .movies__cards {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .movies__cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .movies__card {
+    height: 20vh;
+  }
+
+  .movies__img {
+    width: 100px;
+  }
+}

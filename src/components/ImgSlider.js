@@ -3,7 +3,7 @@ import '../css/ImgSlider.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Add, Share } from '@mui/icons-material';
+import { Add, ShareOutlined } from '@mui/icons-material';
 
 const ImgSlider = () => {
   let settings = {
@@ -33,7 +33,7 @@ const ImgSlider = () => {
                   Play Now
                 </div>
                 <div className='imgSlider__button'>
-                  <Share />
+                  <ShareOutlined />
                   Share
                 </div>
               </div>
@@ -58,7 +58,7 @@ const ImgSlider = () => {
                   Play Now
                 </div>
                 <div className='imgSlider__button'>
-                  <Share />
+                  <ShareOutlined />
                   Share
                 </div>
               </div>
@@ -83,7 +83,7 @@ const ImgSlider = () => {
                   Play Now
                 </div>
                 <div className='imgSlider__button'>
-                  <Share />
+                  <ShareOutlined />
                   Share
                 </div>
               </div>
@@ -108,7 +108,7 @@ const ImgSlider = () => {
                   Play Now
                 </div>
                 <div className='imgSlider__button'>
-                  <Share />
+                  <ShareOutlined />
                   Share
                 </div>
               </div>
@@ -133,7 +133,7 @@ const ImgSlider = () => {
                   Play Now
                 </div>
                 <div className='imgSlider__button'>
-                  <Share />
+                  <ShareOutlined />
                   Share
                 </div>
               </div>
@@ -158,7 +158,7 @@ const ImgSlider = () => {
                   Play Now
                 </div>
                 <div className='imgSlider__button'>
-                  <Share />
+                  <ShareOutlined />
                   Share
                 </div>
               </div>
