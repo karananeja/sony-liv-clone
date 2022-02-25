@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Movies.css';
 import db from '../firebase';
 
@@ -24,13 +25,13 @@ const Movies = () => {
       <div className='movies__cards'>
         {movies.map((movie) => (
           <div className='movies__card' key={movie.id}>
-            <a href=''>
+            <Link to={`/detail/${movie.id}`}>
               <img
                 src={movie.data.cardImg}
                 alt={movie.data.title}
                 className='movies__img'
               />
-            </a>
+            </Link>
           </div>
         ))}
       </div>

@@ -1,0 +1,62 @@
+.detail {
+  color: var(--white-color);
+  position: relative;
+  height: 94.4vh;
+  opacity: 0.8;
+}
+
+.detail__img {
+  position: fixed;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.detail__img > img {
+  height: 100vh;
+  width: 100%;
+}
+
+.detail__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.detail__buttons > button {
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 100px;
+  margin-top: 300px;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: var(--white-color);
+  border: 1px solid transparent;
+}
+
+.detail__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-left: -80px;
+  margin-top: 300px;
+  cursor: pointer;
+}
+
+.detail__trailer {
+  margin: 50px 100px;
+}
+
+@media only screen and (max-width: 850px) {
+  .detail__trailer {
+    margin: 30px 20px;
+  }
+
+  .detail__trailer > div {
+    width: 400px !important;
+    height: 200px !important;
+  }
+}
