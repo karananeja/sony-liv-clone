@@ -12,11 +12,14 @@
   right: 0;
   left: 0;
   z-index: -1;
+  width: 350px;
 }
 
 .detail__img > img {
   height: 100vh;
   width: 100%;
+  margin: 0 800px;
+  object-fit: contain;
 }
 
 .detail__buttons {
@@ -56,7 +59,12 @@
   }
 
   .detail__trailer > div {
-    width: 400px !important;
+    width: 350px !important;
     height: 200px !important;
+  }
+
+  .detail__img > img {
+    width: auto;
+    margin: 0;
   }
 }
